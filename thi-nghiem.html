@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thí nghiệm: Tan hay không tan?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header-section">
+        <h1>BÉ KHÁM PHÁ: TAN HAY KHÔNG TAN?</h1>
+        <p class="subtitle">Bé hãy kéo các vật vào đúng cốc nước nhé!</p>
+    </div>
+
+    <div class="experiment-area">
+        <div class="slot-container">
+            <div class="slot water-cup" data-slot="dissolve">
+                <div class="water"></div>
+            </div>
+            <p class="label">TAN TRONG NƯỚC</p>
+        </div>
+
+        <div class="slot-container">
+            <div class="slot water-cup" data-slot="not-dissolve">
+                <div class="water"></div>
+            </div>
+            <p class="label">KHÔNG TAN TRONG NƯỚC</p>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="item" draggable="true" data-item="dissolve"><img src="hinhanh/muoi.jpg"><span>Muối</span></div>
+        <div class="item" draggable="true" data-item="not-dissolve"><img src="hinhanh/soi.jpg"><span>Sỏi</span></div>
+        <div class="item" draggable="true" data-item="dissolve"><img src="hinhanh/duong.jpg"><span>Đường</span></div>
+        <div class="item" draggable="true" data-item="not-dissolve"><img src="hinhanh/cat.jpg"><span>Cát</span></div>
+        <div class="item" draggable="true" data-item="dissolve"><img src="hinhanh/sua.png"><span>Sữa bột</span></div>
+        <div class="item" draggable="true" data-item="not-dissolve"><img src="hinhanh/vien_bi.jpg"><span>Viên bi</span></div>
+        <div class="item" draggable="true" data-item="dissolve"><img src="hinhanh/bot_ngot.jpg"><span>Bột ngọt</span></div>
+        <div class="item" draggable="true" data-item="not-dissolve"><img src="hinhanh/nut_nhua.jpg"><span>Nút nhựa</span></div>
+    </div>
+
+    <audio id="sound-correct" src="../amthanh/dung.mp3"></audio>
+    <audio id="sound-wrong" src="../amthanh/sai.mp3"></audio>
+    
+    <button class="home-btn-fixed" onclick="goHome()">🏠</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
