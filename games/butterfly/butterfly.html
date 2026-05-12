@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khu vườn khoa học - Vòng đời bướm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>KHU VƯỜN KHOA HỌC</h1>
+    <p class="subtitle">Hãy kéo các hình vào đúng thứ tự vòng đời của bướm</p>
+
+    <!-- Khu vực thả -->
+    <div class="slots">
+        <div class="slot" data-slot="egg">1</div>
+        <div class="slot" data-slot="larva">2</div>
+        <div class="slot" data-slot="pupa">3</div>
+        <div class="slot" data-slot="butterfly">4</div>
+    </div>
+
+    <!-- Khu vực kéo -->
+    <div class="items">
+        <div class="item" draggable="true" data-item="butterfly"><img src="hinhanh/buom.jpg" alt="Bướm"> </div>
+        <div class="item" draggable="true" data-item="egg"> <img src="hinhanh/trungg.jpg" alt="Trứng bướm"> </div>
+        <div class="item" draggable="true" data-item="pupa"><img src="hinhanh/nhong.jpg" alt="Nhộng"> </div>
+        <div class="item" draggable="true" data-item="larva"><img src="hinhanh/sau.jpg" alt="Sâu"> </div>
+    </div>
+    <!-- Khu vực nhạc -->
+    <audio id="sound-correct" src="../amthanh/dung.mp3"></audio>
+    <audio id="sound-wrong" src="../amthanh/sai.mp3"></audio>
+    <button id="videoBtn" class="video-btn hidden">
+    🎬 Xem vòng đời của bướm
+    </button>
+
+    <button class="home-btn" onclick="goHome()">🏠</button>
+
+    <div id="videoOverlay" class="video-overlay hidden">
+    <video id="butterflyVideo" controls>
+        <!-- video vòng đời bướm -->
+        <source src=" hinhanh/video.mp4" type="video/mp4">
+    </video>
+    <button id="closeVideo">✖ Đóng</button> 
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

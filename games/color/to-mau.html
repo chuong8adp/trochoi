@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé tập pha màu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header-section">
+        <h1>BÉ TẬP PHA MÀU SẮC</h1>
+        <p class="subtitle">Bé hãy chọn đúng các màu để pha ra màu giống hình mẫu nhé!</p>
+    </div>
+
+    <div class="target-section">
+        <div class="target-box">
+            <div id="target-color-circle" class="color-circle"></div>
+            <p>MÀU MẪU: <strong id="target-name">...</strong></p>
+            <span id="formula-hint" class="formula-hint">...</span>
+        </div>
+    </div>
+
+    <div id="palette" class="palette"></div>
+
+    <div class="canvas-section">
+        <div id="drawing-paper" class="paper">
+            <p id="paper-hint">Nhấp chọn màu rồi quệt vào đây!</p>
+            <div id="success-tick" class="success-tick">✔</div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <button id="resetBtn" class="reset-btn">Làm lại / Đổi màu khác</button>
+    </div>
+
+    <button class="home-btn-fixed" onclick="goHome()">🏠</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giải cứu pin năng lượng</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🤖 GIẢI CỨU PIN NĂNG LƯỢNG</h1>
+
+<div class="container">
+  <div id="grid"></div>
+
+  <div class="panel">
+  <h3>🧩 Lệnh của bé</h3>
+
+  <div class="control-pad">
+    <button data-cmd="up">⬆</button>
+    <div class="middle-row">
+      <button data-cmd="left">⬅</button>
+      <button data-cmd="right">➡</button>
+    </div>
+    <button data-cmd="down">⬇</button>
+  </div>
+
+  <div class="program-box">
+    <p>📜 Lệnh đã chọn</p>
+    <ul id="program"></ul>
+  </div>
+
+  <div class="action-buttons">
+    <button id="run" class="run-btn">▶ Chạy</button>
+    <button id="reset" class="reset-btn">🔄 Làm lại</button>
+  </div>
+</div>
+</div>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <h2 id="popup-title"></h2>
+    <p id="popup-message"></p>
+    <button id="popup-close">Đóng</button>
+  </div>
+</div>
+
+<button class="home-btn" onclick="goHome()">🏠</button>
+
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>

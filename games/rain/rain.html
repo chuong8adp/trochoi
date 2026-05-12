@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khu vườn khoa học - Vòng tuần hoàn của nước</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>VÒNG TUẦN HOÀN CỦA NƯỚC</h1>
+    <p class="subtitle">Bé hãy kéo các hình vào đúng thứ tự để tạo ra mưa nhé!</p>
+
+    <div class="slots">
+        <div class="slot" data-slot="evaporation">1</div>
+        <div class="slot" data-slot="condensation">2</div>
+        <div class="slot" data-slot="precipitation">3</div>
+        <div class="slot" data-slot="collection">4</div>
+    </div>
+
+    <div class="items">
+        <div class="item" draggable="true" data-item="precipitation"><img src="hinhanh/mua.jpg" alt="Mưa"></div>
+        <div class="item" draggable="true" data-item="evaporation"> <img src="hinhanh/bochoi.jpg" alt="Bốc hơi"></div>
+        <div class="item" draggable="true" data-item="collection"><img src="hinhanh/thanhnuoc.png" alt="Nước"></div>
+        <div class="item" draggable="true" data-item="condensation"><img src="hinhanh/ngungtu.jpg" alt="Ngưng tụ"></div>
+    </div>
+
+    <audio id="sound-correct" src="sound-correct.mp3"></audio>
+    <audio id="sound-wrong" src="sound-wrong.mp3"></audio>
+    
+    <button id="videoBtn" class="video-btn hidden">
+    🎬 Xem quá trình tạo mưa
+    </button>
+
+    <button class="home-btn" onclick="goHome()">🏠</button>
+
+    <div id="videoOverlay" class="video-overlay hidden">
+        <video id="rainVideo" controls>
+            <source src="hinhanh/videomua.mp4" type="video/mp4">
+        </video>
+        <button id="closeVideo">✖ Đóng</button> 
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

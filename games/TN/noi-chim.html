@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thí nghiệm: Vật nổi hay vật chìm?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header-section">
+        <h1>BÉ KHÁM PHÁ: VẬT NỔI HAY VẬT CHÌM?</h1>
+        <p class="subtitle">Bé hãy kéo các vật vào cốc nước xem điều gì xảy ra nhé!</p>
+    </div>
+
+    <div class="experiment-area">
+        <div class="slot-container">
+            <div class="slot water-cup" id="main-cup">
+                <div class="water"></div>
+                </div>
+            <p class="label">CỐC THÍ NGHIỆM</p>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="item" draggable="true" data-type="float"><img src="hinhanh/la_cay.png"><span>Lá cây</span></div>
+        <div class="item" draggable="true" data-type="sink"><img src="hinhanh/vien_bi.jpg"><span>Viên bi</span></div>
+        <div class="item" draggable="true" data-type="float"><img src="hinhanh/thuyen_giay.png"><span>Thuyền giấy</span></div>
+        <div class="item" draggable="true" data-type="sink"><img src="hinhanh/chia_khoa.png"><span>Chìa khóa</span></div>
+        <div class="item" draggable="true" data-type="float"><img src="hinhanh/phao_nhua.png"><span>Phao nhựa</span></div>
+        <div class="item" draggable="true" data-type="sink"><img src="hinhanh/cuc_da.png"><span>Cục đá</span></div>
+        <div class="item" draggable="true" data-type="float"><img src="hinhanh/xop.png"><span>Miếng xốp</span></div>
+        <div class="item" draggable="true" data-type="sink"><img src="hinhanh/dong_xu.png"><span>Đồng xu</span></div>
+    </div>
+
+    <audio id="sound-correct" src="sound-correct.mp3"></audio>
+    <button class="home-btn-fixed" onclick="goHome()">🏠</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

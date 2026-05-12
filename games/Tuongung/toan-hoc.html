@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toán mầm non: Tương ứng 1-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <div class="header-section">
+        <h1>BÉ GIÚP CÁC BẠN TÌM THỨC ĂN</h1>
+        <p class="subtitle">Bé hãy kéo nhóm thức ăn vào đúng ô trống của các bạn nhé!</p>
+    </div>
+
+    <div class="matching-board">
+        <div class="column">
+            <div class="card animal-card border-blue"><img src="hinhanh/3_cho.png"></div>
+            <div class="card animal-card border-orange"><img src="hinhanh/4_tho.png"></div>
+            <div class="card animal-card border-green"><img src="hinhanh/5_bo.png"></div>
+            <div class="card animal-card border-purple"><img src="hinhanh/1_ngua.png"></div>
+            <div class="card animal-card border-red"><img src="hinhanh/2_meo.png"></div>
+        </div>
+
+        <div class="column">
+            <div class="slot" data-count="3"></div>
+            <div class="slot" data-count="4"></div>
+            <div class="slot" data-count="5"></div>
+            <div class="slot" data-count="1"></div>
+            <div class="slot" data-count="2"></div>
+        </div>
+
+        <div class="column" id="source-items">
+            <div class="card item" draggable="true" data-count="5"><img src="hinhanh/5_co.png"></div>
+            <div class="card item" draggable="true" data-count="4"><img src="hinhanh/4_carot.png"></div>
+            <div class="card item" draggable="true" data-count="1"><img src="hinhanh/1_carot.png"></div>
+            <div class="card item" draggable="true" data-count="2"><img src="hinhanh/2_ca.png"></div>
+            <div class="card item" draggable="true" data-count="3"><img src="hinhanh/3_xuong.png"></div>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <button id="submitBtn" class="submit-btn">Kiểm tra kết quả</button>
+        <button id="resetBtn" class="reset-btn">Làm lại</button>
+    </div>
+
+    <audio id="sound-correct" src="sound-correct.mp3"></audio>
+    <audio id="sound-wrong" src="sound-wrong.mp3"></audio>
+    <button class="home-btn-fixed" onclick="goHome()">🏠</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

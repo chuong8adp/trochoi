@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khu vườn khoa học - Vòng đời cây cà chua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>VÒNG ĐỜI CỦA CÂY CÀ CHUA</h1>
+    <p class="subtitle">Bé hãy kéo các hình vào đúng thứ tự phát triển của cây nhé!</p>
+
+    <div class="slots">
+        <div class="slot" data-slot="seed">1</div>
+        <div class="slot" data-slot="sprout">2</div>
+        <div class="slot" data-slot="flower">3</div>
+        <div class="slot" data-slot="fruit">4</div>
+    </div>
+
+    <div class="items">
+        <div class="item" draggable="true" data-item="flower"><img src="hinhanh/hoa.jpg" alt="Ra hoa"></div>
+        <div class="item" draggable="true" data-item="seed"> <img src="hinhanh/hat.jpg" alt="Gieo hạt"></div>
+        <div class="item" draggable="true" data-item="fruit"><img src="hinhanh/qua.jpg" alt="Kết quả"></div>
+        <div class="item" draggable="true" data-item="sprout"><img src="hinhanh/mam.jpg" alt="Nảy mầm"></div>
+    </div>
+
+    <audio id="sound-correct" src="../amthanh/dung.mp3"></audio>
+    <audio id="sound-wrong" src="../amthanh/sai.mp3"></audio>
+    
+    <button id="videoBtn" class="video-btn hidden">
+    🎬 Xem quá trình cây lớn lên
+    </button>
+
+    <button class="home-btn" onclick="goHome()">🏠</button>
+
+    <div id="videoOverlay" class="video-overlay hidden">
+        <video id="rainVideo" controls> <source src="hinhanh/videocachua.mp4" type="video/mp4">
+        </video>
+        <button id="closeVideo">✖ Đóng</button> 
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
